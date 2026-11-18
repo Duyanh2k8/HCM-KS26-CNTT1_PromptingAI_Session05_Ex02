@@ -136,18 +136,19 @@ Hãy viết bài theo từng phần. Nếu nội dung quá dài, chia thành nhi
 ## 2. Quy trình truyền dữ liệu giữa các Prompt
 Để tránh mất ngữ cảnh và đảm bảo tính nhất quán, sử dụng cấu trúc truyền dữ liệu như sau:
 ```mermaid
+%%{init: {"flowchart": {"wrappingWidth": 450, "nodeSpacing": 80, "rankSpacing": 100}}}%%
+
 flowchart TD
-  A["PROMPT 1 – RESEARCH</br>Phân tích khách hàng và Pain Points</br>Output JSON 1"]
-  B["PROMPT 2 – OUTLINE</br>Xây dựng dàn ý và từ khóa SEO</br>Output JSON 2"]
-  C["PROMPT 3 – CONTENT</br>Viết bài PR và tối ưu SEO</br>Bài PR hoàn chỉnh"]
+    A["PROMPT 1 - RESEARCH<br/><br/>Phân tích khách hàng và Pain Points<br/>Output JSON 1"]
 
-  A --> |"Truyền JSON 1 làm đầu vào"| B
-  B --> |"Truyền JSON 2 làm đầu vào"| C
+    B["PROMPT 2 - OUTLINE<br/><br/>Xây dựng dàn ý và từ khóa SEO<br/>Output JSON 2"]
 
-classDef box font-size:18px,padding:25px
-class A,B,C box
+    C["PROMPT 3 - CONTENT<br/><br/>Viết bài PR và tối ưu SEO<br/>Bài PR hoàn chỉnh"]
 
-  style A fill:#e5edfc,stroke:#e5edfc,color:#111
-  style B fill:#e1f5ef,stroke:#e1f5ef,color:#111
-  style C fill:#f1e6fa,stroke:#f1e6fa,color:#111
+    A -->|"Truyền JSON 1 làm đầu vào"| B
+    B -->|"Truyền JSON 2 làm đầu vào"| C
+
+    style A fill:#e5edfc,stroke:#dce6f5,color:#111
+    style B fill:#e1f5ef,stroke:#d5eee5,color:#111
+    style C fill:#f1e6fa,stroke:#e9dcf5,color:#111
 ```
