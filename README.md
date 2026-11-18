@@ -176,3 +176,16 @@ Các yêu cầu bắt buộc:
 **Yêu cầu:** Viết tiếp ngay sau câu cuối cùng và hoàn thành phần nội dung còn lại.
 
 ---
+## 4. Kiểm tra chất lượng đầu ra
+Sau khi hoàn thành bài PR, tiến hành kiểm tra theo bảng sau:
+|Tiêu chí	|Yêu cầu|
+|---|---|
+|Độ dài	|1000–1500 từ|
+|Headline	|Thu hút, có từ khóa chính|
+|Lead	|Nêu được vấn đề khách hàng|
+|H2, H3	|Đúng cấu trúc dàn ý|
+|Nội dung	|Giải quyết Pain Points|
+|SEO	|Từ khóa tự nhiên|
+|Giọng văn	|Chuyên nghiệp, nhất quán|
+|CTA	|Rõ ràng, có hành động cụ thể|
+|Tính chính xác	|Không bịa thông tin|
