@@ -141,8 +141,8 @@ flowchart TD
   B["PROMPT 2 – OUTLINE</br>Xây dựng dàn ý và từ khóa SEO</br>Output JSON 2"]
   C["PROMPT 3 – CONTENT</br>Viết bài PR và tối ưu SEO</br>Bài PR hoàn chỉnh"]
 
-  A --> |"Truyền JSON 1 làm đầu vào"|B
-  B --> |"Truyền JSON 2 làm đầu vào"|C
+  A --> |"Truyền JSON 1 làm đầu vào"| B
+  B --> |"Truyền JSON 2 làm đầu vào"| C
 
   Style A fill:#e5edfc,stroke:#e5edfc,color:#111
   Style B fill:#e1f5ef,stroke:#e1f5ef,color:#111
