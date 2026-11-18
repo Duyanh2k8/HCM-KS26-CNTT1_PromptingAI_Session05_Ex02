@@ -139,7 +139,7 @@ Hãy viết bài theo từng phần. Nếu nội dung quá dài, chia thành nhi
 %%{init: {"flowchart": {"wrappingWidth": 450, "nodeSpacing": 80, "rankSpacing": 100}}}%%
 
 flowchart TD
-    A["<b>PROMPT 1 - RESEARCH</b><br/><br/>Phân tích khách hàng và Pain Points<br/>"("Output JSON 1")]
+    A["<b>PROMPT 1 - RESEARCH</b><br/><br/>Phân tích khách hàng và Pain Points<br/>(Output JSON 1)"]
 
     B["<b>PROMPT 2 - OUTLINE</b><br/><br/>Xây dựng dàn ý và từ khóa SEO<br/>Output JSON 2"]
 
