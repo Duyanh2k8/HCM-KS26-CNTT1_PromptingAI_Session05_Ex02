@@ -144,6 +144,9 @@ flowchart TD
   A --> |"Truyền JSON 1 làm đầu vào"| B
   B --> |"Truyền JSON 2 làm đầu vào"| C
 
+classDef box font-size:18px,padding:25px
+class A,B,C box
+
   style A fill:#e5edfc,stroke:#e5edfc,color:#111
   style B fill:#e1f5ef,stroke:#e1f5ef,color:#111
   style C fill:#f1e6fa,stroke:#f1e6fa,color:#111
