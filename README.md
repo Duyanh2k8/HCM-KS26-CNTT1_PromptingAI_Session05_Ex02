@@ -141,9 +141,9 @@ Hãy viết bài theo từng phần. Nếu nội dung quá dài, chia thành nhi
 flowchart TD
     A["<b>PROMPT 1 - RESEARCH</b><br/><br/>Phân tích khách hàng và Pain Points<br/>(Output JSON 1)"]
 
-    B["<b>PROMPT 2 - OUTLINE</b><br/><br/>Xây dựng dàn ý và từ khóa SEO<br/>Output JSON 2"]
+    B["<b>PROMPT 2 - OUTLINE</b><br/><br/>Xây dựng dàn ý và từ khóa SEO<br/>(Output JSON 2)"]
 
-    C["<b>PROMPT 3 - CONTENT</b><br/><br/>Viết bài PR và tối ưu SEO<br/>Bài PR hoàn chỉnh"]
+    C["<b>PROMPT 3 - CONTENT</b><br/><br/>Viết bài PR và tối ưu SEO<br/>(Bài PR hoàn chỉnh)"]
 
     A -->|"Truyền JSON 1 làm đầu vào"| B
     B -->|"Truyền JSON 2 làm đầu vào"| C
@@ -152,3 +152,27 @@ flowchart TD
     style B fill:#e1f5ef,stroke:#d5eee5,color:#111
     style C fill:#f1e6fa,stroke:#e9dcf5,color:#111
 ```
+## 3. Xử lý khi AI bị ngắt quãng do Max Token
+Khi AI đang viết bài nhưng bị dừng giữa chừng, cần sử dụng câu lệnh tiếp tục để duy trì nội dung và tránh viết lại từ đầu.
+
+**Prompt xử lý ngắt quãng:**
+
+---
+Hãy tiếp tục viết bài PR từ đúng vị trí đã bị ngắt ở câu trả lời trước.
+
+Các yêu cầu bắt buộc:
+
+1. Đọc lại nội dung đã viết trước đó để xác định chính xác vị trí đang dở.
+2. Tiếp tục từ câu hoặc đoạn cuối cùng, không viết lại nội dung cũ.
+3. Giữ nguyên dàn ý, cấu trúc H2, H3 và thứ tự các phần.
+4. Duy trì giọng văn chuyên nghiệp, tin cậy như phần trước.
+5. Không thay đổi thông tin sản phẩm và các Pain Points đã xác định.
+6. Đảm bảo đoạn mới liên kết tự nhiên với đoạn trước.
+7. Không tự ý kết luận bài viết khi chưa hoàn thành toàn bộ nội dung.
+
+**Nội dung cuối cùng đã viết:**
+[Dán đoạn văn cuối cùng trước khi bị ngắt]
+
+**Yêu cầu:** Viết tiếp ngay sau câu cuối cùng và hoàn thành phần nội dung còn lại.
+
+---
